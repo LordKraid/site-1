@@ -173,6 +173,24 @@ a{
   padding-top: 10%;
 }
 
+//===FOOTER==========================================
+
+.footer{
+  background: #1C1814;
+  height: 90px;
+}
+
+.rights{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 //===MEDIA===========================================
 
 @media (max-width: 1279px) {
