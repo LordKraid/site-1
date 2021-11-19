@@ -23,6 +23,8 @@ a {
 .header {
   background: #1C1814;
   height: 125px;
+  width: 100%;
+  position: fixed;
 }
 
 .header-container {
@@ -74,6 +76,7 @@ a {
 .benefits-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 125px;
 }
 
 .card {
@@ -251,6 +254,10 @@ a {
 
   ._nav > div {
     padding: 0 5px;
+  }
+
+  .benefits-container {
+    margin-top: 100px;
   }
 
   .card-title {
