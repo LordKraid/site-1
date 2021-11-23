@@ -1,6 +1,7 @@
 @import "null.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Righteous&family=Urbanist:wght@500&display=swap");
 body {
+  height: 100vh;
   color: #FFFFFF;
   font-family: "Urbanist", sans-serif;
 }
@@ -84,7 +85,7 @@ a {
 }
 
 .card-title {
-  font-size: 24px;
+  font-size: calc(10px + 13 * ((100vw - 320px) / 960));
   line-height: 30px;
   font-family: "Righteous", cursive;
   margin-bottom: 24px;
@@ -136,7 +137,7 @@ a {
 
 .history-subtitle {
   font-weight: 600;
-  font-size: 18px;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 960));
   line-height: 22px;
   color: #C99E71;
   padding-top: 30%;
@@ -144,18 +145,111 @@ a {
 
 .history-title {
   font-family: "Righteous", cursive;
-  font-size: 48px;
+  font-size: calc(30px + 18 * ((100vw - 320px) / 960));
   line-height: 130%;
   padding-top: 3.3%;
 }
 
 .history-text {
   font-weight: 500;
-  font-size: 16px;
+  font-size: calc(12px + 4 * ((100vw - 320px) / 960));
   line-height: 180%;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.8);
   padding-top: 10%;
+}
+
+.product-subtitle {
+  font-weight: 600;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 960));
+  line-height: 22px;
+  color: #C99E71;
+  text-align: center;
+}
+
+.product-title {
+  font-family: "Righteous", cursive;
+  font-size: calc(30px + 18 * ((100vw - 320px) / 960));
+  line-height: 130%;
+  text-align: center;
+  padding-top: 0.5%;
+}
+
+.product-catalog {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+
+.catalog-item {
+  background: #121315;
+  text-align: center;
+  padding: 4.102% 4.102% 0 4.102%;
+  flex-basis: 31.28%;
+}
+
+.catalog-img > img {
+  width: 73.77%;
+}
+
+.catalog-grade {
+  font-weight: 500;
+  font-size: calc(10px + 6 * ((100vw - 320px) / 960));
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #C99E71;
+  padding-top: 10.11%;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-grade__stars {
+  display: flex;
+  justify-content: space-between;
+  width: 112.67px;
+  padding-left: 14.67px;
+}
+
+.catalog-grade__stars > img {
+  max-width: 16.67px;
+  flex-basis: 14.75%;
+}
+
+.catalog-title {
+  font-family: "Righteous", cursive;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 5.46%;
+}
+
+.catalog-price {
+  font-weight: 600;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 960));
+  line-height: 22px;
+  text-transform: uppercase;
+  padding-top: 5.46%;
+  padding-bottom: 10.92%;
+}
+
+.catalog-price__320\$ {
+  color: #C99E71;
+}
+
+.product-button {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.product-button__button {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: calc(10px + 8 * ((100vw - 320px) / 960));
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.71% 3.07%;
+  background: #C99E71;
 }
 
 .footer {
@@ -165,7 +259,7 @@ a {
 
 .rights {
   font-weight: 500;
-  font-size: 14px;
+  font-size: calc(9px + 5 * ((100vw - 320px) / 960));
   line-height: 180%;
   height: 100%;
   display: flex;
@@ -302,6 +396,23 @@ a {
 
   .history-text {
     font-size: 12px;
+  }
+
+  .product-catalog {
+    justify-content: space-evenly;
+  }
+
+  .catalog-item__3 {
+    display: none;
+  }
+}
+@media (max-width: 499px) {
+  .product-catalog {
+    justify-content: center;
+  }
+
+  .catalog-item__2 {
+    display: none;
   }
 }
 
