@@ -78,9 +78,14 @@ a{
   padding: 0 10px;
 }
 
+._nav > div > a{
+  transition: 0.25s;
+}
+
 ._nav > div > a:hover{
   color: #C99E71;
   transition: 0.25s;
+  font-size: 120%;
 }
 
 .page{
@@ -297,7 +302,23 @@ a{
 
   display: inline-block;
   padding: 1.71% 3.07%;
+  border: 0.3rem solid #C99E71;
   background: #C99E71;
+
+  transition: 0.3s;
+}
+
+.product-button__button:hover{
+  transition: 0.3s;
+  border-radius: 50px;
+  background: #121315;
+}
+
+.product-button__button:active{
+  transition: 0.3s;
+  border-radius: 50px;
+  background: #FFFFFF;
+  color: #121315;
 }
 
 //===FOOTER==========================================
