@@ -86,12 +86,13 @@ a {
   margin-top: 125px;
   width: 100%;
   height: calc(100vh - 125px);
+  background: #14110E;
 }
 
 .main-fix {
   width: 100%;
   height: calc(100vh - 125px);
-  background: url("../source/img/main.jpg") 80%/125% auto no-repeat;
+  background: url("../source/img/main.jpg") 80% 0/125% auto no-repeat;
   position: fixed;
 }
 
@@ -101,14 +102,14 @@ a {
 
 .main-title {
   font-family: "Righteous", cursive;
-  font-size: calc(26px + 46 * ((100vw - 320px) / 960));
+  font-size: calc(24px + 48 * ((100vw - 320px) / 960));
   line-height: 130%;
   padding-top: 12.56%;
 }
 
 .main-text {
   font-weight: 500;
-  font-size: calc(9px + 11 * ((100vw - 320px) / 960));
+  font-size: calc(7px + 13 * ((100vw - 320px) / 960));
   line-height: 180%;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.8);

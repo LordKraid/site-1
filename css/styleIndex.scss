@@ -101,12 +101,13 @@ a{
   margin-top: 125px;
   width: 100%;
   height: calc(100vh - 125px);
+  background: #14110E;
 }
 
 .main-fix{
   width: 100%;
   height: calc(100vh - 125px);
-  background: url("../source/img/main.jpg")80%/125% auto no-repeat;
+  background: url("../source/img/main.jpg")80% 0/125% auto no-repeat;
   position: fixed;
 }
 
@@ -117,7 +118,7 @@ a{
 .main-title{
   font-family: 'Righteous', cursive;
   //font-size: 72px;
-  @include adaptiv-font(72, 26);
+  @include adaptiv-font(72, 24);
   line-height: 130%;
 
   padding-top: 12.56%;
@@ -126,7 +127,7 @@ a{
 .main-text{
   font-weight: 500;
   //font-size: 20px;
-  @include adaptiv-font(20, 9);
+  @include adaptiv-font(20, 7);
   line-height: 180%;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.8);
