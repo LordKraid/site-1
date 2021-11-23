@@ -26,6 +26,7 @@ a {
   height: 125px;
   width: 100%;
   position: fixed;
+  z-index: 100;
 }
 
 .header-container {
@@ -77,12 +78,73 @@ a {
 
 .page {
   background: #14110E;
+  position: relative;
+  z-index: 1;
+}
+
+.main {
+  margin-top: 125px;
+  width: 100%;
+  height: calc(100vh - 125px);
+}
+
+.main-fix {
+  width: 100%;
+  height: calc(100vh - 125px);
+  background: url("../source/img/main.jpg") 80%/125% auto no-repeat;
+  position: fixed;
+}
+
+.main-container {
+  padding-top: 0;
+}
+
+.main-title {
+  font-family: "Righteous", cursive;
+  font-size: calc(24px + 48 * ((100vw - 320px) / 960));
+  line-height: 130%;
+  padding-top: 12.56%;
+}
+
+.main-text {
+  font-weight: 500;
+  font-size: calc(7px + 13 * ((100vw - 320px) / 960));
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 2.73%;
+}
+
+.main-button__button {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: calc(7px + 11 * ((100vw - 320px) / 960));
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-top: 5.47%;
+  display: inline-block;
+  padding: 2.05% 3.42%;
+  border: 0.3rem solid #C99E71;
+  background: #C99E71;
+  transition: 0.3s;
+}
+
+.main-button__button:hover {
+  transition: 0.3s;
+  border-radius: 50px;
+  background: #121315;
+}
+
+.main-button__button:active {
+  transition: 0.3s;
+  border-radius: 50px;
+  background: #FFFFFF;
+  color: #121315;
 }
 
 .benefits-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 125px;
 }
 
 .card {
@@ -275,6 +337,8 @@ a {
 .footer {
   background: #1C1814;
   height: 90px;
+  position: relative;
+  z-index: 100;
 }
 
 .rights {
@@ -303,6 +367,14 @@ a {
 @media (max-width: 1023px) {
   .header-container {
     max-width: 85%;
+  }
+
+  .main {
+    height: 50vw;
+  }
+
+  .main-fix {
+    height: 50vw;
   }
 
   .history-column__1 {
@@ -370,8 +442,26 @@ a {
     padding: 0 5px;
   }
 
-  .benefits-container {
+  .main {
     margin-top: 100px;
+  }
+
+  .main-container {
+    padding-top: 0;
+  }
+
+  .main-title {
+    padding-top: 8%;
+  }
+
+  .main-text {
+    padding-top: 2.5%;
+  }
+
+  .main-button__button {
+    margin-top: 5%;
+    padding: 0.2% 3%;
+    border: 0.1rem solid #C99E71;
   }
 
   .card-title {
@@ -386,6 +476,10 @@ a {
 @media (max-width: 767px) {
   ._container {
     padding: 12% 30px 0 30px;
+  }
+
+  .main-container {
+    padding-top: 0;
   }
 
   .benefits-container {
