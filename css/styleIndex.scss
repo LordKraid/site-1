@@ -178,11 +178,11 @@ a{
 
 .card-title{
   //font-size: 24px;
-  @include adaptiv-font(23, 10);
+  @include adaptiv-font(24, 10);
   line-height: 30px;
   font-family: 'Righteous', cursive;
 
-  margin-bottom: 24px;
+  margin-bottom: 7%;
 }
 
 .card-title__num{
@@ -384,7 +384,82 @@ a{
 
 .product-button__button:active{
   transition: 0.3s;
+  background: #FFFFFF;
+  color: #121315;
+}
+
+//===MACHINE=========================================
+
+.machine-container{
+  margin-top: 140px;
+  padding-top: 0;
+}
+
+.machine-flex{
+  background: #1C1814;
+  padding: 6.15% 6.84% 7.18% 14.4%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.machine-img{
+  flex-basis: 25.7%;
+}
+
+.machine-img > img{
+  width: 100%;
+}
+
+.machine-content{
+  flex-basis: 60%;
+}
+
+.machine-title{
+  font-family: 'Righteous', cursive;
+  //font-size: 48px;
+  @include adaptiv-font(48, 21);
+  line-height: 130%;
+
+  margin-bottom: 6.5%;
+}
+
+.machine-text{
+  font-weight: 500;
+  //font-size: 16px;
+  @include adaptiv-font(16, 12);
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
+
+  margin-bottom: 7%;
+}
+
+.machine-button{
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  //font-size: 18px;
+  @include adaptiv-font(18, 10);
+  line-height: 22px;
+  text-transform: uppercase;
+
+  display: inline-block;
+  background: #C99E71;
+  border: 0.2rem solid #C99E71;
+  padding: 4% 7%;
+
+  transition: 0.3s;
+}
+
+.machine-button:hover{
+  transition: 0.3s;
   border-radius: 50px;
+  background: #121315;
+}
+
+.machine-button:active{
+  transition: 0.3s;
   background: #FFFFFF;
   color: #121315;
 }
@@ -412,6 +487,81 @@ a{
 
 //===MEDIA===========================================
 
+@media (min-width: 1280px) {
+  .main-title {
+    font-size: 72px;
+  }
+
+  .main-text {
+    font-size: 20px;
+  }
+
+  .main-button__button {
+    font-size: 18px;
+  }
+
+
+  .card-title {
+    font-size: 24px;
+  }
+
+
+  .history-subtitle {
+    font-size: 18px;
+  }
+
+  .history-title {
+    font-size: 48px;
+  }
+
+  .history-text {
+    font-size: 16px;
+  }
+
+
+  .product-subtitle {
+    font-size: 18px;
+  }
+
+  .product-title {
+    font-size: 48px;
+  }
+
+  .catalog-grade {
+    font-size: 16px;
+  }
+
+  .catalog-title {
+    font-size: 24px;
+  }
+
+  .catalog-price {
+    font-size: 18px;
+  }
+
+  .product-button__button {
+    font-size: 18px;
+  }
+
+
+  .machine-title {
+    font-size: 48px;
+  }
+
+  .machine-text {
+    font-size: 16px;
+  }
+
+  .machine-button {
+    font-size: 18px;
+  }
+
+
+  .rights {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 1279px) {
   .header-container{
     max-width: 75%;
@@ -423,6 +573,11 @@ a{
 
   ._nav{
     flex-basis: 40%;
+  }
+
+
+  .machine-flex{
+    padding: 5% 7%;
   }
 }
 @media (max-width: 1023px) {
@@ -466,6 +621,19 @@ a{
   .history-text{
     font-size: 16px;
     padding-top: 5%;
+  }
+
+
+  .machine-img{
+    display: none;
+  }
+
+  .machine-content{
+    flex-basis: 100%;
+  }
+
+  .machine-button{
+    padding: 2% 3.5%;
   }
 }
 @media (max-width: 959px) {
@@ -533,8 +701,13 @@ a{
 
 
   .card-title{
-    font-size: 17px;
     line-height: 22px;
+  }
+
+
+  .machine-container{
+    margin-top: 12%;
+    padding-top: 0;
   }
 
 
@@ -554,6 +727,20 @@ a{
 
 
   .benefits-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card{
+    flex-basis: 45%;
+  }
+
+  .card-3{
+    margin-top: 48px;
+  }
+
+/*
+  .benefits-container{
     flex-direction: column;
     align-items: center;
   }
@@ -563,14 +750,14 @@ a{
     line-height: 30px;
   }
 
-  .card-2 > .card-title{
+  .card-2{
     margin-top: 48px;
   }
 
-  .card-3 > .card-title{
+  .card-3{
     margin-top: 48px;
   }
-
+*/
 
   .history-subtitle{
     font-size: 12px;
