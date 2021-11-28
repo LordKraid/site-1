@@ -487,11 +487,11 @@ a {
   font-size: calc(32px + 16 * ((100vw - 320px) / 1600));
   line-height: 60px;
   color: #FFFFFF;
-  margin-bottom: 9.57%;
+  margin-bottom: 9%;
 }
 
 .booking-content__form {
-  margin-bottom: 9.57%;
+  margin-bottom: 9%;
 }
 
 .booking-form > input {
