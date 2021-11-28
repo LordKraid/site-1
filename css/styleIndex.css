@@ -451,6 +451,89 @@ a {
   color: #C99E71;
 }
 
+.booking-container {
+  margin-top: 140px;
+  padding-top: 0;
+}
+
+.booking-flex {
+  background: #1C1814;
+  display: flex;
+}
+
+.booking-map {
+  flex-basis: 50%;
+}
+
+.booking-map > img {
+  width: 100%;
+}
+
+.booking-content {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.booking-subtitle {
+  font-weight: 600;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  line-height: 22px;
+  color: #C99E71;
+  margin: 12.31% 0 2.05%;
+}
+
+.booking-title {
+  font-family: "Righteous", cursive;
+  font-size: calc(32px + 16 * ((100vw - 320px) / 1600));
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 9.57%;
+}
+
+.booking-content__form {
+  margin-bottom: 9.57%;
+}
+
+.booking-form > input {
+  font-weight: 600;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  background: #14110E;
+  padding: 3% 3.5%;
+  width: 83.59%;
+}
+
+.booking-form:not(:last-child) {
+  margin-bottom: 4.1%;
+}
+
+.booking-button {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  line-height: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  background: #C99E71;
+  border: 0.2rem solid #C99E71;
+  padding: 3.5% 7%;
+  transition: 0.3s;
+}
+
+.booking-button:hover {
+  transition: 0.3s;
+  border-radius: 50px;
+  background: #121315;
+}
+
+.booking-button:active {
+  transition: 0.3s;
+  background: #FFFFFF;
+  color: #121315;
+}
+
 .footer {
   background: #1C1814;
   height: 90px;
@@ -530,6 +613,22 @@ a {
   }
 
   .machine-button {
+    font-size: 18px;
+  }
+
+  .booking-subtitle {
+    font-size: 18px;
+  }
+
+  .booking-title {
+    font-size: 48px;
+  }
+
+  .booking-form > input {
+    font-size: 18px;
+  }
+
+  .booking-button {
     font-size: 18px;
   }
 
@@ -675,6 +774,11 @@ a {
     padding-top: 0;
   }
 
+  .booking-container {
+    margin-top: 12%;
+    padding-top: 0;
+  }
+
   .footer {
     height: 55px;
   }
@@ -726,6 +830,21 @@ a {
     grid-template-rows: repeat(8, 1fr);
     column-gap: 0;
     row-gap: 20px;
+  }
+
+  .booking-flex {
+    background: #1C1814;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .booking-map {
+    flex-basis: 100%;
+  }
+
+  .booking-content {
+    flex-basis: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 449px) {
